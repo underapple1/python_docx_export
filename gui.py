@@ -185,13 +185,14 @@ class ApplicationGUI:
         self.cb_delete_raw_file.place(relx=0.58, rely=0.57, relheight=0.063, relwidth=0.4, bordermode='ignore')
         self.cb_delete_raw_file.configure(text='''导出成功后删除原文件''')
         self.cb_delete_raw_file.configure(variable=self.che_delete_raw)
-        self.lb_brand = tk.Label(self.lf_export_setting, text='批量导出docx文本、图片和附件程序\n',
-                                 font=('宋体', 14, 'bold italic'),
-                                 bg='#7CCD7C',
-                                 # 设置标签内容区大小
-                                 width=34, height=2,
-                                 # 设置填充区距离、边框宽度和其样式（凹陷式）
-                                 padx=10, pady=15, borderwidth=10, relief='sunken')
+        self.lb_brand = tk.Label(self.lf_export_setting, text='\n',
+             font=('宋体', 14, 'bold italic'),
+             bg='#3366CC',
+             fg='#ffffff',  # Set the text color to white
+             # 设置标签内容区大小
+             width=34, height=2,
+             # 设置填充区距离、边框宽度和其样式（凹陷式）
+             padx=10, pady=15, borderwidth=10, relief='sunken')
         self.lb_brand.place(relx=0.027, rely=0.785, relwidth=0.9, height=82, width=17, bordermode='ignore')
         self.lb_tips = tk.Entry(self.lf_export_setting)
         self.lb_tips.configure(textvariable=self.entry_tips_val)

@@ -76,7 +76,7 @@ class Application(ApplicationGUI):
         self.set_checkbutton_text()
         self.register_command()
 
-        self.entry_tips_val.set('<< (>_<)')
+        self.entry_tips_val.set('🫅🤴👸')
 
         self.export_ui = None
         self.e_progress = 0
@@ -85,7 +85,7 @@ class Application(ApplicationGUI):
         self.e_cancel = 0
         self.e_pause = 0
 
-        self.lb_brand.configure(text='批量导出docx文本、图片和附件程序\n' + self.version + '\n@B站：敏Ymm')
+        self.lb_brand.configure(text='资产导出\n' + self.version + '\n@MSS')
 
     def set_checkbutton_text(self):
         self.che_text.set(1)
